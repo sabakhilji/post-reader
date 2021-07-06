@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{Post} from '../posts';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
   
-  posts:object[]=[];
+  posts:Post[]=[];
   constructor() { }
   ngOnInit():void{
     this.posts=[
@@ -21,6 +21,7 @@ export class PostsComponent implements OnInit {
         Votes:2
       }
     ]
+   
   }
 
  
