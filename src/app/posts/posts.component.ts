@@ -23,7 +23,9 @@ export class PostsComponent implements OnInit {
     ]
    
   }
-
+hidepost(post:Post):void{
+  this.posts=this.posts.filter(p=> p.id!==post.id);
+}
  
 
 }
