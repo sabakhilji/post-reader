@@ -1,5 +1,19 @@
 <h3>{{post.title}}</h3>
 <p>{{post.Votes}}</p>
+<style> button{display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 2px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    
+    cursor: pointer;
+    margin: 2px;} (click)="upvote(post)"</style> 
+    
+       
 <button (click)="upvote(post)">Upvote</button>
 <button (click)="downvote(post)">Downvote</button>
 <button (click)="hide(post)">Hide</button>
